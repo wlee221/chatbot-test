@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import '@aws-amplify/ui/dist/style.css'
 
 ReactDOM.render(
   <React.StrictMode>
