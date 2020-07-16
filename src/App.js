@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { withAuthenticator, ChatBot, SignOut } from 'aws-amplify-react'
@@ -13,7 +12,6 @@ function App() {
       alert('Bot conversation failed')
       return;
     }
-
     alert('Success: ' + JSON.stringify(confirmation, null, 2));
     return 'Trip booked. Thank you! what would you like to do next?';
   }
@@ -30,7 +28,7 @@ function App() {
         welcomeMessage="Welcome, how can I help you today?"
         onComplete={handleComplete}
         clearOnComplete={true}
-        conversationModeOn={false}
+        conversationModeOn={true}
         voiceEnabled={true}
       />
       <SignOut />
