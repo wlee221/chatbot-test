@@ -28,7 +28,6 @@ function App() {
         welcomeMessage="Welcome, how can I help you today?"
         onComplete={handleComplete}
         clearOnComplete={true}
-        conversationModeOn={true}
         voiceEnabled={true}
       />
       <SignOut />
