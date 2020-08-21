@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"chatbottest11a03bf1": {
+		"chatbottestreact6ce65a5e": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
@@ -8,7 +8,7 @@
 		}
 	},
 	"interactions": {
-		"lexeec7a216": {
+		"lexfcd3aaf8": {
 			"service": "Lex",
 			"providerPlugin": "awscloudformation",
 			"build": true

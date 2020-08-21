@@ -105,12 +105,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"chatbottest_cfnlambda_f6489478",
+						"chatbottestreact_cfnlambda_60c52c28",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"chatbottest_cfnlambda_f6489478",
+									"chatbottestreact_cfnlambda_60c52c28",
 									"-",
 									{
 										"Ref": "env"
@@ -136,8 +136,8 @@
 				"Runtime": "nodejs10.x",
 				"Timeout": "300",
 				"Code": {
-					"S3Bucket": "amplify-chatbottest-dev-143152-deployment",
-					"S3Key": "amplify-builds/lexeec7a216-3775457a5746386b4c61-build.zip"
+					"S3Bucket": "amplify-chatbottestreact-dev-125917-deployment",
+					"S3Key": "amplify-builds/lexfcd3aaf8-38765834324f706d3459-build.zip"
 				}
 			}
 		},
@@ -147,12 +147,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"lexLambdaRolef6489478",
+						"lexLambdaRole60c52c28",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"lexLambdaRolef6489478",
+									"lexLambdaRole60c52c28",
 									"-",
 									{
 										"Ref": "env"
@@ -180,7 +180,7 @@
 				},
 				"Policies": [
 					{
-						"PolicyName": "cloudWatchPolicyf6489478",
+						"PolicyName": "cloudWatchPolicy60c52c28",
 						"PolicyDocument": {
 							"Version": "2012-10-17",
 							"Statement": [
@@ -197,7 +197,7 @@
 						}
 					},
 					{
-						"PolicyName": "lexPolicyf6489478",
+						"PolicyName": "lexPolicy60c52c28",
 						"PolicyDocument": {
 							"Version": "2012-10-17",
 							"Statement": [
@@ -227,7 +227,7 @@
 						}
 					},
 					{
-						"PolicyName": "lambdaPolicyf6489478",
+						"PolicyName": "lambdaPolicy60c52c28",
 						"PolicyDocument": {
 							"Version": "2012-10-17",
 							"Statement": [
@@ -244,7 +244,7 @@
 				]
 			}
 		},
-		"LambdaFunctionOutputsf6489478": {
+		"LambdaFunctionOutputs60c52c28": {
 			"Type": "Custom::LambdaCallout",
 			"Properties": {
 				"ServiceToken": {
@@ -270,7 +270,7 @@
 		"CognitoUnauthPolicy": {
 			"Type": "AWS::IAM::Policy",
 			"Properties": {
-				"PolicyName": "lex_amplify_f6489478",
+				"PolicyName": "lex_amplify_60c52c28",
 				"Roles": [
 					{
 						"Ref": "unauthRoleName"
@@ -340,7 +340,7 @@
 		"CognitoAuthPolicy": {
 			"Type": "AWS::IAM::Policy",
 			"Properties": {
-				"PolicyName": "lex_amplify_f6489478",
+				"PolicyName": "lex_amplify_60c52c28",
 				"Roles": [
 					{
 						"Ref": "authRoleName"
